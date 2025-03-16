@@ -42,7 +42,7 @@ class Response(object):
 class HealthchecksioHelper:
     def __init__(self, module):
         self.module = module
-        self.baseurl = "https://healthchecks.io/api/v1"
+        self.baseurl = "https://health.gueldi.dev/api/v1"
         self.timeout = module.params.get("timeout", 30)
         self.api_token = module.params.get("api_token")
         self.headers = {"X-Api-Key": self.api_token}
